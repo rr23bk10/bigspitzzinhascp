@@ -54,6 +54,11 @@ document.getElementById("pedidoBtn").addEventListener("click", () => {
     return;
   }
 
+  if (!pagamento) {
+    alert("Selecione a forma de pagamento 💳");
+    return;
+  }
+
   let mensagem = "🍕 *Pedido Big’s Pitzzinhas* %0A%0A";
   selecionadas.forEach(item => {
     const qtd = item.parentElement.querySelector(".qtd").value;

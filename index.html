@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Big's Pitzzinhas</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b6f6f6f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="navbar">
@@ -18,21 +20,28 @@
   <main>
     <section id="cardapio" class="cardapio">
       <h1>Monte seu pedido 🍕</h1>
-      <p class="frete">🚚 Frete grátis • 📍 Fadel Jabur, 96 - Primavera - Cornélio Procópio</p>
+      <p class="frete">🚚 Frete grátis • 📍 Cornélio Procópio</p>
 
       <div id="pizzas-container" class="pizzas"></div>
 
       <div class="form-extra">
-        <label>📦 Endereço de entrega:</label>
-        <input type="text" id="endereco" placeholder="Ex: Rua das Flores, 123 - Centro">
+        <h2>📝 Informações de Entrega</h2>
 
-        <label>💳 Forma de pagamento:</label>
-        <select id="pagamento">
-          <option value="Dinheiro">Dinheiro</option>
-          <option value="Pix">Pix</option>
-          <option value="Cartão de Crédito">Cartão de Crédito</option>
-          <option value="Cartão de Débito">Cartão de Débito</option>
-        </select>
+        <div class="input-group">
+          <label for="endereco"><i class="fas fa-map-marker-alt"></i> Endereço de entrega</label>
+          <input type="text" id="endereco" placeholder="Ex: Rua das Flores, 123 - Centro">
+        </div>
+
+        <div class="input-group">
+          <label for="pagamento"><i class="fas fa-wallet"></i> Forma de pagamento</label>
+          <select id="pagamento">
+            <option value="">Selecione uma opção</option>
+            <option value="Dinheiro">💵 Dinheiro</option>
+            <option value="Pix">⚡ Pix</option>
+            <option value="Cartão de Crédito">💳 Cartão de Crédito</option>
+            <option value="Cartão de Débito">💳 Cartão de Débito</option>
+          </select>
+        </div>
       </div>
 
       <button id="pedidoBtn" class="pedido-btn">Fazer pedido pelo WhatsApp</button>
