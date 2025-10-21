@@ -1,0 +1,189 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fff8f2 0%, #ffe7d6 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 🔺 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d32f2f;
+  padding: 12px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffe082;
+}
+
+/* 🔺 CONTEÚDO */
+.cardapio {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.frete {
+  font-weight: 600;
+  color: #388e3c;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.pizzas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+/* 🔺 CARD MODERNO */
+.pizza {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pizza:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.pizza img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  transition: transform 0.4s ease;
+}
+
+.pizza:hover img {
+  transform: scale(1.05);
+}
+
+.pizza h3 {
+  font-size: 1.2rem;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.pizza label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff5f5;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pizza label:hover {
+  background: #ffe0e0;
+}
+
+.qtd {
+  width: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+/* 🔺 BOTÃO PRINCIPAL */
+.pedido-btn {
+  background: linear-gradient(90deg, #ff5252, #d32f2f);
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.pedido-btn:hover {
+  background: linear-gradient(90deg, #e53935, #b71c1c);
+  transform: scale(1.05);
+}
+
+/* 🔺 RODAPÉ MODERNO */
+.footer {
+  background: #b71c1c;
+  color: #fff8f0;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 5px solid #ffcc80;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.tel-link {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.tel-link:hover {
+  text-decoration: underline;
+}
+
+/* 🔺 WHATSAPP FIXO */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-btn img {
+  width: 40px;
+  height: 40px;
+}
