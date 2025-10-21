@@ -1,16 +1,16 @@
 const pizzas = [
-  { nome: "4 Queijos", img: "pizzas/4queijos.png", p15: 20.85, p20: 30.88, p35: 55.26 },
-  { nome: "5 Queijos", img: "pizzas/5queijos.png", p15: 23.85, p20: 32.88, p35: 59.26 },
-  { nome: "5 Queijos Especial", img: "pizzas/5queijos-especial.png", p15: 25.00, p20: 38.63, p35: 71.06 },
-  { nome: "Atum", img: "pizzas/atum.png", p15: 23.00, p20: 34.13, p35: 62.06 },
-  { nome: "Bacon", img: "pizzas/bacon.png", p15: 20.00, p20: 29.13, p35: 52.06 },
-  { nome: "Bacon e Calabresa", img: "pizzas/bacon-calabresa.png", p15: 22.25, p20: 33.63, p35: 60.50 },
-  { nome: "Brigadeiro", img: "pizzas/brigadeiro.png", p15: 17.25, p20: 23.50, p35: 38.60 },
+  { nome: "4 Queijos", img: "pizzas/bp.png", p15: 20.85, p20: 30.88, p35: 55.26 },
+  { nome: "5 Queijos", img: "pizzas/bp.png", p15: 23.85, p20: 32.88, p35: 59.26 },
+  { nome: "5 Queijos Especial", img: "pizzas/bp.png", p15: 25.00, p20: 38.63, p35: 71.06 },
+  { nome: "Atum", img: "pizzas/bp.png", p15: 23.00, p20: 34.13, p35: 62.06 },
+  { nome: "Bacon", img: "pizzas/bp.png", p15: 20.00, p20: 29.13, p35: 52.06 },
+  { nome: "Bacon e Calabresa", img: "pizzas/bp.png", p15: 22.25, p20: 33.63, p35: 60.50 },
+  { nome: "Brigadeiro", img: "pizzas/bp.png", p15: 17.25, p20: 23.50, p35: 38.60 },
   { nome: "Calabresa", img: "pizzas/calabresa.png", p15: 20.25, p20: 29.63, p35: 52.26 },
-  { nome: "Margherita", img: "pizzas/margherita.png", p15: 18.10, p20: 25.38, p35: 44.26 },
+  { nome: "Margherita", img: "pizzas/bp.png", p15: 18.10, p20: 25.38, p35: 44.26 },
   { nome: "Margherita e Bacon", img: "pizzas/margherita-e-bacon.png", p15: 20.10, p20: 29.38, p35: 52.26 },
-  { nome: "Presunto", img: "pizzas/presunto.png", p15: 20.00, p20: 30.13, p35: 55.06 },
-  { nome: "Presunto e Calabresa", img: "pizzas/presunto-calabresa.png", p15: 20.50, p20: 34.88, p35: 64.86 }
+  { nome: "Presunto", img: "pizzas/bp.png", p15: 20.00, p20: 30.13, p35: 55.06 },
+  { nome: "Presunto e Calabresa", img: "pizzas/bp.png", p15: 20.50, p20: 34.88, p35: 64.86 }
 ];
 
 const container = document.getElementById("pizzas-container");
