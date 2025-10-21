@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 110px;
   transition: transform 0.3s ease;
 }
 .logo:hover {
@@ -39,7 +39,7 @@ body {
   color: #ffe082;
 }
 
-/* 🔺 CONTEÚDO */
+/* 🔺 CARDÁPIO */
 .cardapio {
   text-align: center;
   padding: 40px 20px;
@@ -52,74 +52,88 @@ body {
   margin-top: 5px;
 }
 
+/* Galeria menor */
 .pizzas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 25px;
   margin-top: 30px;
-  padding: 0 20px;
 }
 
-/* 🔺 CARD MODERNO */
 .pizza {
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  padding: 20px;
-  transition: all 0.3s ease;
-  position: relative;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .pizza:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .pizza img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 12px;
-  transition: transform 0.4s ease;
-}
-
-.pizza:hover img {
-  transform: scale(1.05);
 }
 
 .pizza h3 {
-  font-size: 1.2rem;
+  margin: 10px 0;
   color: #d32f2f;
-  margin-bottom: 10px;
 }
 
-.pizza label {
+.pizza-opcoes {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background: #fff5f5;
-  padding: 6px 10px;
-  border-radius: 10px;
-  margin: 5px 0;
-  cursor: pointer;
-  transition: 0.2s;
+  gap: 5px;
 }
 
-.pizza label:hover {
-  background: #ffe0e0;
+.pizza-opcoes label {
+  background: #fff5f5;
+  border-radius: 8px;
+  padding: 4px 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .qtd {
-  width: 50px;
+  width: 45px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 6px;
   text-align: center;
-  margin-left: 5px;
 }
 
-/* 🔺 BOTÃO PRINCIPAL */
+/* 🔹 FORM EXTRA */
+.form-extra {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.form-extra label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.form-extra input,
+.form-extra select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* 🔺 BOTÃO */
 .pedido-btn {
   background: linear-gradient(90deg, #ff5252, #d32f2f);
   color: white;
@@ -128,7 +142,7 @@ body {
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
@@ -138,7 +152,7 @@ body {
   transform: scale(1.05);
 }
 
-/* 🔺 RODAPÉ MODERNO */
+/* 🔺 RODAPÉ */
 .footer {
   background: #b71c1c;
   color: #fff8f0;
@@ -146,24 +160,9 @@ body {
   text-align: center;
   margin-top: 50px;
   border-top: 5px solid #ffcc80;
-  box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
 }
 
-.footer p {
-  margin: 8px 0;
-  font-size: 15px;
-}
-
-.tel-link {
-  color: #ffeb3b;
-  text-decoration: none;
-}
-
-.tel-link:hover {
-  text-decoration: underline;
-}
-
-/* 🔺 WHATSAPP FIXO */
+/* 🔺 WHATSAPP */
 .whatsapp-btn {
   position: fixed;
   bottom: 25px;

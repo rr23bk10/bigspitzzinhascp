@@ -18,17 +18,31 @@
   <main>
     <section id="cardapio" class="cardapio">
       <h1>Monte seu pedido 🍕</h1>
-      <p class="frete">🚚 Frete grátis para Cornélio Procópio!</p>
+      <p class="frete">🚚 Frete grátis • 📍 Fadel Jabur, 96 - Primavera - Cornélio Procópio</p>
+
       <div id="pizzas-container" class="pizzas"></div>
+
+      <div class="form-extra">
+        <label>📦 Endereço de entrega:</label>
+        <input type="text" id="endereco" placeholder="Ex: Rua das Flores, 123 - Centro">
+
+        <label>💳 Forma de pagamento:</label>
+        <select id="pagamento">
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Pix">Pix</option>
+          <option value="Cartão de Crédito">Cartão de Crédito</option>
+          <option value="Cartão de Débito">Cartão de Débito</option>
+        </select>
+      </div>
+
       <button id="pedidoBtn" class="pedido-btn">Fazer pedido pelo WhatsApp</button>
     </section>
   </main>
 
-  <footer id="contato" class="footer">
-    <p>📍 <strong>Endereço:</strong> Rua Fadel Jabur, 96 - Jardim Primavera - Cornélio Procópio</p>
-    <p>📞 <strong>Telefone:</strong> <a href="tel:+5543984234418" class="tel-link">(43) 9 8423-4418</a></p>
-    <p>⏰ <strong>Horário:</strong> Segunda a Domingo, das 18h às 23h</p>
-    <p>🍕 <strong>Big's Pitzzinhas</strong> — Sabor que conquista!</p>
+  <footer class="footer" id="contato">
+    <p>📞 (43) 9 8423-4418</p>
+    <p>📍 Fadel Jabur, 96 - Primavera - Cornélio Procópio</p>
+    <p>🍕 Big's Pitzzinhas - Sabor que conquista!</p>
   </footer>
 
   <a href="https://wa.me/5543984234418" target="_blank" class="whatsapp-btn">
