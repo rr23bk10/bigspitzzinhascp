@@ -8,7 +8,7 @@ const pizzas = [
   { nome: "Brigadeiro", img: "pizzas/brigadeiro.jpg", p15: 17.25, p20: 23.50, p35: 38.60 },
   { nome: "Calabresa", img: "pizzas/calabresa.jpg", p15: 20.25, p20: 29.63, p35: 52.26 },
   { nome: "Margherita", img: "pizzas/margherita.jpg", p15: 18.10, p20: 25.38, p35: 44.26 },
-  { nome: "Margherita e Bacon", img: "pizzas/margherita-bacon.jpg", p15: 20.10, p20: 29.38, p35: 52.26 },
+  { nome: "Margherita e Bacon", img: "pizzas/margherita-e-bacon.png", p15: 20.10, p20: 29.38, p35: 52.26 },
   { nome: "Presunto", img: "pizzas/presunto.jpg", p15: 20.00, p20: 30.13, p35: 55.06 },
   { nome: "Presunto e Calabresa", img: "pizzas/presunto-calabresa.jpg", p15: 20.50, p20: 34.88, p35: 64.86 }
 ];
