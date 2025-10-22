@@ -15,6 +15,7 @@ const pizzas = [
 
 const container = document.getElementById("pizzas-container");
 
+// Cria os cards das pizzas dinamicamente
 pizzas.forEach((pizza, index) => {
   const card = document.createElement("div");
   card.className = "pizza";
@@ -39,6 +40,7 @@ pizzas.forEach((pizza, index) => {
   container.appendChild(card);
 });
 
+// Função para enviar pedido via WhatsApp
 document.getElementById("pedidoBtn").addEventListener("click", () => {
   const selecionadas = document.querySelectorAll("input[type='checkbox']:checked");
   const endereco = document.getElementById("endereco").value.trim();
@@ -54,15 +56,14 @@ document.getElementById("pedidoBtn").addEventListener("click", () => {
     return;
   }
 
-  let mensagem = "🍕 *Pedido Big’s Pitzzinhas* %0A%0A";
+  let mensagem = "Pedido de %0A%0A";
   selecionadas.forEach(item => {
     const qtd = item.parentElement.querySelector(".qtd").value;
-    mensagem += `• ${qtd}x ${item.value}%0A`;
+    mensagem += ` ${qtd}x ${item.value}%0A`;
   });
 
-  mensagem += `%0A🏠 *Endereço:* ${endereco}`;
-  mensagem += `%0A💳 *Pagamento:* ${pagamento}`;
-  mensagem += `%0A%0A🚚 *Frete grátis!*%0A📍 Fadel Jabur, 96 - Primavera - Cornélio Procópio%0A📞 (43) 9 8423-4418`;
+  mensagem += `%0A| Endereço: ${endereco}`;
+  mensagem += `%0A| Pagamento: ${pagamento}`;
 
   const url = `https://wa.me/5543984234418?text=${mensagem}`;
   window.open(url, "_blank");
