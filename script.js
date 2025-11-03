@@ -2,13 +2,13 @@ const pizzas = [
   { nome: "4 Queijos", img: "pizzas/bp.png", p15: 21.00, p20: 31.00, p35: 55.00 },
   { nome: "5 Queijos", img: "pizzas/bp.png", p15: 24.00, p20: 33.00, p35: 60.00 },
   //{ nome: "5 Queijos Especial", img: "pizzas/bp.png", p15: 25.00, p20: 39.00, p35: 72.00 },
-  { nome: "Atum", img: "pizzas/bp.png", p15: 23.00, p20: 35.00, p35: 62.00 },
-  { nome: "Bacon", img: "pizzas/bp.png", p15: 20.00, p20: 30.00, p35: 52.00 },
-  { nome: "Bacon e Calabresa", img: "pizzas/bp.png", p15: 22.25, p20: 34.00, p35: 60.00 },
+  { nome: "Atum & Cebola", img: "pizzas/bp.png", p15: 23.00, p20: 35.00, p35: 62.00 },
+  { nome: "Bacon & Cebola", img: "pizzas/bp.png", p15: 20.00, p20: 30.00, p35: 52.00 },
+  { nome: "Bacon & Calabresa", img: "pizzas/bp.png", p15: 22.25, p20: 34.00, p35: 60.00 },
   { nome: "Brigadeiro", img: "pizzas/bp.png", p15: 17.25, p20: 23.50, p35: 40.00 },
-  { nome: "Calabresa", img: "pizzas/calabresa.png", p15: 20.25, p20: 30.00, p35: 52.00 },
+  { nome: "Calabresa & Cebola", img: "pizzas/calabresa.png", p15: 20.25, p20: 30.00, p35: 52.00 },
   { nome: "Margherita", img: "pizzas/bp.png", p15: 18.00, p20: 25.00, p35: 44.00 },
-  { nome: "Margherita e Bacon", img: "pizzas/margherita-e-bacon.png", p15: 20.00, p20: 29.38, p35: 52.00 },
+  { nome: "Margherita & Bacon", img: "pizzas/margherita-e-bacon.png", p15: 20.00, p20: 29.38, p35: 52.00 },
   //{ nome: "Presunto", img: "pizzas/bp.png", p15: 20.00, p20: 30.00, p35: 54.00 },
   //{ nome: "Presunto e Calabresa", img: "pizzas/bp.png", p15: 20.50, p20: 35.00, p35: 62.00 }
 ];
